@@ -1,0 +1,35 @@
+{
+    "name"       : "tlwl/http-client",
+    "description": "http client for the request internal service.",
+    "keywords"   : ["http","client","php/client","http/client"],
+    "type"       : "library",
+    "authors"    : [
+        {
+            "name" : "tlwl",
+            "email": "tian_wolf@sina.com"
+        }
+    ],
+    "require": {
+        "php"                     : "^7.0",
+        "ext-openssl"             : "*",
+        "ext-SimpleXML"           : "*",
+        "monolog/monolog"         : "^1.24",
+        "symfony/http-foundation" : "^3.0|^4.0",
+        "symfony/event-dispatcher": "^3.0|^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tlwl\\HttpClient\\":"src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tlwl\\HttpClient\\Tests\\":"tests"
+        }
+    },
+    "license": "MIT"
+}
